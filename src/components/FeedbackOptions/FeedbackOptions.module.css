@@ -1,0 +1,15 @@
+.button {
+    border-radius: 5px;
+    outline: none;
+    transition: 0.4s;
+    background-color: aliceblue;
+    border: 1px solid grey;
+}
+
+.button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.button:active {
+    background-color: blue;
+}
