@@ -12,9 +12,9 @@ export default class App extends Component {
     neutral: 0,
     bad: 0,
   };
-  onLeaveFeddback = (e) => {
-    const { value } = e.target.attributes.option;
-    this.setState({ [value]: this.state[value] + 1 });
+  onLeaveFeedback = (e) => {
+    const { name }  = e.target;
+    this.setState(prevState => ({ [name]: prevState[name] + 1 }));
   };
   countTotalFeedback = () => {
     const { good, neutral, bad } = this.state;
@@ -29,8 +29,7 @@ export default class App extends Component {
     return (
       <Section title="Please leave feedback">
         <FeedbackOptions
-          options={this.state}
-          onLeaveFeedback={this.onLeaveFeddback}
+          onLeaveFeedback={this.onLeaveFeedback}
         />
         {this.countTotalFeedback() ?
           <Statistics
