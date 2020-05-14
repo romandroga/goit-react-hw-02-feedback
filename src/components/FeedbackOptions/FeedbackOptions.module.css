@@ -1,7 +1,7 @@
 .button {
     border-radius: 5px;
     outline: none;
-    transition: 0.4s;
+    transition: 0.2s;
     background-color: aliceblue;
     border: 1px solid grey;
     cursor: pointer;

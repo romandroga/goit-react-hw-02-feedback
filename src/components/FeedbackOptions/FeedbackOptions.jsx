@@ -6,9 +6,30 @@ const FeedbackOptions = ({ onLeaveFeedback }) => {
   const { button } = styles;
   return (
     <>
-      <button type="button" className={button} onClick={onLeaveFeedback} name="good">Good</button>
-      <button type="button" className={button} onClick={onLeaveFeedback} name="neutral">Neutral</button>
-      <button type="button" className={button} onClick={onLeaveFeedback} name="bad">Bad</button>
+      <button
+        type="button"
+        className={button}
+        onClick={onLeaveFeedback}
+        name="good"
+      >
+        Good
+      </button>
+      <button
+        type="button"
+        className={button}
+        onClick={onLeaveFeedback}
+        name="neutral"
+      >
+        Neutral
+      </button>
+      <button
+        type="button"
+        className={button}
+        onClick={onLeaveFeedback}
+        name="bad"
+      >
+        Bad
+      </button>
     </>
   );
 };
